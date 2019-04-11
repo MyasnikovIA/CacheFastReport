@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.4.6" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="N?N??�?�?????�N????�?�???�N????�?�???�N??�?????�?�??N??�N??????�??N??�" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43556,3496795833" ReportOptions.Description.Text="" ReportOptions.LastChange="43557,8509531366" ScriptLanguage="PascalScript" ScriptText.Text="&#13;&#10;begin&#13;&#10;&#13;&#10;end.">
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="241,88992" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxMemoView Name="Memo3" Left="3,77953" Top="173,85838" Width="653,85869" Height="60,47248" Text="Версия сервера : #($zv)#&#13;&#10;Область имен : #($zu(5))#&#13;&#10;Дата создания отчета: #($zdt($h))#"/>
+      <TfrxBarcode2DView Name="Barcode2D1" Left="7,55906" Top="3,77953" Width="84" Height="100" BarType="bcCodeQR" BarProperties.Encoding="qrAuto" BarProperties.QuietZone="0" BarProperties.ErrorLevels="ecL" BarProperties.PixelSize="4" BarProperties.CodePage="0" Rotation="0" ShowText="True" Text="#($zv)#" Zoom="1" FontScaled="True" QuietZone="0"/>
+    </TfrxReportTitle>
+    <TfrxMasterData Name="MasterData1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="18,89765" Left="0" Top="321,26005" Width="718,1107" ColumnWidth="0" ColumnGap="0" RowCount="16" SQLquery="   [NameSpace=&#34;&#34;]  select * from %SYS.ProcessQuery where NameSpace like '%{NameSpace}%'">
+      <TfrxMemoView Name="Memo5" Left="0" Top="0" Width="166,29932" Height="18,89765" StretchMode="smMaxHeight" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo6" Left="166,29932" Top="0" Width="181,41744" Height="18,89765" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo7" Left="347,71676" Top="0" Width="147,40167" Height="18,89765" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+      <TfrxMemoView Name="Memo8" Left="495,11843" Top="0" Width="154,96073" Height="18,89765" StretchMode="smActualHeight" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" Text=""/>
+    </TfrxMasterData>
+    <TfrxPageFooter Name="PageFooter1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="400,63018" Width="718,1107">
+      <TfrxMemoView Name="Memo1" Left="634,96104" Top="0" Width="75,5906" Height="18,89765" HAlign="haRight" Text="[Page#]"/>
+    </TfrxPageFooter>
+    <TfrxMemoView Name="Memo2" Left="253,22851" Top="15,11812" Width="204,09462" Height="34,01577" Font.Charset="1" Font.Color="0" Font.Height="-27" Font.Name="Arial" Font.Style="0" ParentFont="False" Text="Тестовый отчет"/>
+  </TfrxReportPage>
+</TfrxReport>
